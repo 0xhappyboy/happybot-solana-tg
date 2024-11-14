@@ -10,3 +10,9 @@ pretty_env_logger = "0.5"
 tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+happypto = {git = "https://github.com/0xhappyboy/happypto", branch = "main"}
+tokio = {version = "1.4", features = ["full"]}
+
+[patch.crates-io]
+merlin = {git = "https://github.com/aptos-labs/merlin"}
+x25519-dalek = {git = "https://github.com/aptos-labs/x25519-dalek", branch = "zeroize_v1"}
